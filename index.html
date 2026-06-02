@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Student Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="header">
+      <div class="brand">Mica M. Gumba</div>
+      <button class="theme-toggle" id="themeToggle">Dark mode</button>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Hi, I’m</p>
+        <h1>Mica M. Gumba</h1>
+        <p class="hero-description">I am a first-year Bachelor of Science in Information Systems (BSIS) student at Davao del Sur State College. I am eager to learn and develop my knowledge and skills in technology and information systems. As a student, I continuously strive to improve myself by gaining new experiences, enhancing my abilities, and working hard to achieve my academic and personal goals.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">See projects</a>
+          <a class="button secondary" href="#about">About me</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <i class="fas fa-graduation-cap"></i>
+            <strong>Status</strong>
+            <p>BSIS student at Davao del Sur State College</p>
+          </div>
+          <div>
+            <i class="fas fa-laptop-code"></i>
+            <strong>Focus</strong>
+            <p>Class assignments, group projects, and tech learning.</p>
+          </div>
+          <div>
+            <i class="fas fa-rocket"></i>
+            <strong>Goal</strong>
+            <p>Improve skills, collaborate well, and showcase my school work.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="profile.jpg" alt="Mica M. Gumba profile photo" />
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About me</p>
+        <h2>Student projects from this school year.</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>I am a first-year BSIS student who enjoys learning through academic projects, research, and digital design activities. I like exploring information and discovering new ideas through online resources and educational websites.</p>
+          <p>Through my coursework and personal learning, I continuously develop my knowledge, creativity, and technical skills. Each project and activity helps me gain new experiences and improve my abilities as I work toward becoming a more capable and knowledgeable student.</p>
+        </div>
+        <div class="feature-list">
+          <div>
+            <i class="fas fa-book"></i>
+            <strong>Classwork</strong>
+            <p>School assignments and semester projects that follow teacher requirements and learning goals.</p>
+          </div>
+          <div>
+            <i class="fas fa-users"></i>
+            <strong>Team projects</strong>
+            <p>Group builds, class collaborations, and presentations that show how I work with others.</p>
+          </div>
+          <div>
+            <i class="fas fa-brain"></i>
+            <strong>Learning focus</strong>
+            <p>Every project is a step forward in coding, design, and problem-solving for the next school year.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>School-year projects and class assignments.</h2>
+      </div>
+      <div class="project-filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Project Proposal</button>
+        <button class="filter" data-filter="game">System</button>
+        <button class="filter" data-filter="design">ISTP</button>
+      </div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="web">
+          <div class="meta">Project Proposal</div>
+          <h3>Cinema Ticketing and Management System</h3>
+          <p>a group project developed as part of our Computer Programming 1 course. The system was designed to simplify cinema ticket booking by allowing users to view movie schedules, select seats, and process ticket reservations through a console-based interface. This project helped our team apply fundamental Java programming concepts, including arrays, loops, conditional statements, input validation, and transaction processing.</p>
+          <a href="#contact">Learn more</a>
+        </article>
+        <article class="project-card" data-category="game">
+          <div class="meta">System</div>
+          <h3>Loan Mangement System</h3>
+          <p>a group project designed to help manage and monitor loan records efficiently. The system allows users to add borrower information, record loan details, track payments, update loan statuses, and view loan balances. It also features a dashboard that displays the total number of loans, ongoing loans, fully paid loans, and overdue accounts. Through this project, we applied programming and database management concepts to create a simple and organized solution for handling loan transactions and records.</p>
+          <a href="#contact">Learn more</a>
+        </article>
+        <article class="project-card" data-category="design">
+          <div class="meta">ISTP</div>
+          <h3>Information Systems and Technology Projects for Expressip</h3>
+          <p>a web-based system designed to streamline inventory monitoring, stock tracking, and sales reporting. It helps improve accuracy, reduce manual work, and support efficient business operations through real-time inventory management. The system also provides timely inventory information, enabling better decision-making and stock control for the business.</p>
+          <a href="#contact">Learn more</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools and technologies I use.</h2>
+      </div>
+      <div class="skill-grid">
+        <span>Java</span>
+        <span>GitHub</span>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Share ideas or school teamwork.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-panel">
+          <p>Interested in my school projects or want to collaborate on a class assignment? Send a note to the email below.</p>
+          <a class="button primary" href="mailto:hello@schoolmail.com">Email me</a>
+        </div>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="hello@schoolmail.com" />
+          </label>
+          <label>
+            Message
+            <textarea rows="4" placeholder="Tell me about your school project"></textarea>
+          </label>
+          <button class="button secondary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Mica M. Gumba — Student projects from this school year.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
